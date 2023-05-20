@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+p{background-color: #070707; color: white;text-align: center;font-size: 1.25rem;}
+h1{font-size: 2rem; text-align: center};
+h2{font-size: 2.7rem;text-align: center;color: bluesss;}
+h3{font-size: 2rem;text-align: center;color: whitesmoke;}
+h4{font-size: 2rem; color: rgb(0, 0, 0);}
+h6{font-size: 1.5rem; color: whitesmoke;}
+ul{list-style: none;}
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(119, 13, 13);
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(156, 18, 18);
+    color: whitesmoke;
+}
+header .container{
+    display: grid;
+    flex-direction: row;
+    align-items: start;
+    grid-template-columns: auto auto;
+    padding-left: 10px;
+}
+header nav{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-inline-end: 10px;
+    position: sticky;
+    top: 0;
+}
+header a{
+    color: black;
+    padding: 0px 25px;
+    flex-direction: column;
+    text-decoration: underline double;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+header a:hover{
+    color: whitesmoke;
+}
+.menu{
+    display: grid;
+    list-style-type: none;
+}
+.menu__item{
+    flex-direction: column;
+}
+.menu__item a{
+    color: black;
+    text-decoration: none;
+}
+.menu__item.active a,
+.menu__item a:hover{
+    text-decoration: underline double;
+}
+main{
+    background-color: black;
+}
+main{
+    background-color: black;
+}
+.foto{
+    background-image: url(../fotos/nikeangel3.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+}
+.foto h2{
+    color: whitesmoke;
+    text-align: start;
+    margin-top: 0px;
+}
+.parallax{
+    color: black;
+    height: 190px;
+    background-color: rgb(148, 14, 14);
+    background-image: none;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+    text-align: center;
+}
+.parallax p{
+    text-align: center;
+}
+.tarjetitas{
+    padding: 50px;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.tarjetita{
+    width: 200px;
+    overflow: hidden;
+}
+.tarjetita__imagen{
+    max-width: 200px;
+    border-radius: 15px;
+}
+footer{
+    align-items: center;
+    text-align: center;
+}
+@media (min-width: 720px) {
+       
+header{
+    background-color: rgb(156, 18, 18);
+    color: whitesmoke;
+}
+p{background-color: #070707; color: white;text-align: center;font-size: 1.25rem;}
+h1{font-size: 2rem; text-align: center;}
+h2{font-size: 2.7rem;text-align: center;}
+h3{font-size: 2rem;text-align: center;color: whitesmoke;}
+h4{font-size: 2.5rem; color: #070707;}
+h5{font-size: 2rem;}
+h6{font-size: 1.5rem; color: whitesmoke;}
+ul{list-style: none;}
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(119, 13, 13);
+}
+.container{
+    max-width: 1400px;
+}
+header .container{
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    grid-template-columns: auto auto;
+    padding-left: 100px;
+}
+header nav{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 45px;
+    padding-inline-end: 200px;
+    position: sticky;
+    top: 0;
+}
+header a{
+    padding: 0px 25px;
+    text-decoration: underline double;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+header a:hover{
+    color: whitesmoke;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+}
+.menu__item{
+    margin-inline: 10px;
+}
+.menu__item a{
+    color: black;
+    text-decoration: none;
+}
+.menu__item.active a,
+.menu__item a:hover{
+    text-decoration: underline double;
+}
+main{
+    background-color: black;
+}
+.foto{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 900px;
+    background-image: url(../fotos/nikenike.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.foto h2{
+    color: white;
+    text-align: start;
+}
+.parallax{
+    height: 400px;
+    background-image: url("../fotos/jordanfoto3.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    list-style-type: none;
+    background-color: rgb(156, 18, 18);
+}
+h2{
+    color: rgb(206, 197, 197);
+    background-color: black;
+}
+.tarjetitas{
+    padding: 50px;
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    margin: 0px;
+    gap: 100px;
+    justify-content: space-around;
+}
+.tarjetita{
+    width: 200px;
+    overflow: hidden;
+}
+.tarjetita__imagen{
+    height: 300px;
+    border-radius: 15px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px;
+}
+.caja{
+    color: whitesmoke;
+    background-color: #070707;
+    border: 3px solid whitesmoke;
+    text-align: center;
+    line-height: 150px;
+}
+.c1{
+    background-color: aqua;
+    grid-row: 1/4;
+}
+.c4{
+    grid-column: 2/4;
+    background-color: rgb(138, 17, 17);
+}
+footer{
+    background-color: rgb(204, 202, 202);
+    height: 50px;
+    text-align: center;
+    grid-template-columns: auto auto;
+}
+}

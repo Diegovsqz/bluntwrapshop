@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: rgb(156, 18, 18);
+    color: whitesmoke;
+}
+p{background-color: rgb(0, 0, 0); color: white;text-align: center;font-size: 1.25rem;}
+i{color: whitesmoke;}
+h1{font-size: 2rem; text-align: center;}
+h2{font-size: 2rem;text-align: start;}
+h3{font-size: 1.rem;text-align: center;}
+h4{font-size: 1.6rem;text-align: center;}
+button{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20x;
+    color: black;
+    background-color: rgb(119, 13, 13);
+    width: 300px;
+    text-align: center center;
+    align-items: center center;
+}    
+header .container{
+    display: grid;
+    flex-direction: row;
+    align-items: start;
+    grid-template-columns: auto auto;
+    padding-left: 10px;
+}
+header nav{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-inline-end: 10px;
+    position: sticky;
+    top: 0;
+}
+header a{
+    color: black;
+    padding: 0px 25px;
+    flex-direction: column;
+    text-decoration: underline double;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+header a:hover{
+    color: whitesmoke;
+}
+.menu{
+    display: grid;
+    list-style-type: none;
+}
+.menu__item{
+    flex-direction: column;
+}
+.menu__item a{
+    color: black;
+    text-decoration: none;
+}
+.menu__item.active a,
+.menu__item a:hover{
+    text-decoration: underline double;
+}
+body{
+    background-color: #070707;
+    color: whitesmoke;
+}
+.items{
+    align-items: center;
+    text-align: center;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 500px;
+    background-image: url(../fotos/visa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer{
+    text-align: center;
+    align-items: center;
+}
+@media (min-width: 720px){
+    header{
+        background-color: rgb(156, 18, 18);
+        color: whitesmoke;
+    }
+    p{background-color: #070707; color: white;text-align: center;font-size: 1.25rem;}
+    h1{font-size: 2rem; text-align: center;}
+    h2{font-size: 2.7rem;text-align: center;}
+    h3{font-size: 2rem;text-align: center;color: whitesmoke;}
+    h4{font-size: 1.9rem; color: whitesmoke;text-align: center;}
+    h5{font-size: 2rem;}
+    ul{list-style: none;}
+    i{color: whitesmoke;}
+    button{
+        font-size: 1rem;
+        font-weight: bold;
+        color: black;
+        background-color: rgb(119, 13, 13);
+    }
+    .container{
+        max-width: 1400px;
+    }
+    header .container{
+        display: grid;
+        flex-direction: column;
+        align-items: start;
+        grid-template-columns: auto auto;
+        padding-left: 100px;
+    }
+    header nav{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 45px;
+        padding-inline-end: 200px;
+        position: sticky;
+        top: 0;
+    }
+    header a{
+        padding: 0px 25px;
+        text-decoration: underline double;
+        padding-bottom: 25px;
+        font-weight: bold;
+    }
+    header a:hover{
+        color: whitesmoke;
+    }
+    .menu{
+        display: flex;
+        list-style-type: none;
+    }
+    .menu__item{
+        margin-inline: 10px;
+    }
+    .menu__item a{
+        color: black;
+        text-decoration: none;
+    }
+    .menu__item.active a,
+    .menu__item a:hover{
+        text-decoration: underline double;
+    }
+    .section{
+        text-align: center;
+    }
+    body{
+        background-color: #070707;
+        color: whitesmoke;
+    }
+    .items{
+        align-items: center;
+        text-align: center;
+    }
+    button{
+        height: 100px;
+        font-size: 2rem;
+    }
+    .tarjeta{
+        height: 300px;
+        width: 100%;
+        background-image: url(../fotos/visa.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer{
+        text-align: center;
+        align-items: center;
+    }
+}
